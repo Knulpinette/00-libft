@@ -4,8 +4,8 @@ NAME		= libft.a
 
 # -*- Definitions of variables -*-
 
-SRCS		= ${shell find . -type f \( -name "ft_*.c" ! -name "ft_lst*.c" ! -name "*bonus.c" ! -wholename "./TestLibft/*.c" \) | cut -d'/' -f2-}
-SRCS_BONUS	= ${shell find . -type f \( -name "ft_*.c" ! -wholename "./TestLibft/*.c" \) | cut -d'/' -f2-}
+SRCS		= ${shell find . -type f \( -name "ft_*.c" ! -name "ft_lst*.c" ! -name "*bonus.c" \) | cut -d'/' -f2-}
+SRCS_BONUS	= ${shell find . -type f \( -name "ft_*.c" \) | cut -d'/' -f2-}
 
 OBJS_DIR	= objs
 OBJS		= ${addprefix ${OBJS_DIR}/,${SRCS:.c=.o}}
