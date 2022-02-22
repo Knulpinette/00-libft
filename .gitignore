@@ -1,0 +1,5 @@
+TestLibft/
+objs
+libft.a
+**/.vscode/
+**/.DS_Store
